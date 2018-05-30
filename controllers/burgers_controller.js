@@ -39,6 +39,4 @@ router.post("/burgers/:id", function (req, res) {
   });
 });
 
-
-
 module.exports = router;
