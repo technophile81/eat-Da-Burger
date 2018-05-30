@@ -32,6 +32,10 @@ app.use("/burgers", routes);
 app.use("/burgers/add", routes);
 app.use("/burgers/update", routes);
 
+app.get("/favicon.ico", function (req, res) {
+  res.sendFile(path.join(__dirname, "./public/favicon.ico"));
+});
+
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
   // Log (server-side) when our server has started

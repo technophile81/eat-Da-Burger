@@ -11,7 +11,7 @@
                 <div class="name">{{this.burger_name}}</div>
                 <form action="/burgers/{{this.id}}?_method=put" method="POST">
                     <input type="hidden" value="1" name="devoured">
-                    <button class="btn btn-primary" type="submit">Devoured It!</button>
+                    <button class="btn btn-primary" type="submit">Devour It!</button>
                 </form>
             </div>
             {{/unless}} {{/each}}
