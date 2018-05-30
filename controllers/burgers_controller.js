@@ -5,6 +5,10 @@ var router = express.Router();
 // Import the model (burger.js) to use its database functions.
 var burger = require("../models/burger.js");
 
+router.get("/", function (req, res) {
+res.redirect("/burgers");
+})
+
 router.get("/burgers", function (req, res) {
   burger.selectAll(function (data) {
     var hbsObject = {
