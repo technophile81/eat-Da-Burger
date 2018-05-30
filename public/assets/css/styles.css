@@ -100,6 +100,7 @@ button {
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+.single-burger .name { font-weight: 700;}
 
 .single-burger.devoured {
     padding-bottom: 16px;
@@ -107,6 +108,7 @@ button {
 
 .single-burger.devoured .name {
     color: rgba(255, 255, 255, 0.75);
+    font-weight: 300;
 }
 
 .btn-primary {
