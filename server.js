@@ -29,8 +29,6 @@ app.use(routes);
 app.use("/", routes);
 
 app.use("/burgers", routes);
-app.use("/burgers/add", routes);
-app.use("/burgers/update", routes);
 
 app.get("/favicon.ico", function (req, res) {
   res.sendFile(path.join(__dirname, "./public/assets/favicon.ico"));
